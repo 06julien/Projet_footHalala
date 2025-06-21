@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="/index/Styles/Style.css" />
+    <title>Réservation de Terrains</title>
+  </head>
+  <body>
+    <!-- --------header-------- -->
+    <header>
+      <div class="logo">
+        <img src="" alt="Logo" />
+      </div>
+      <div class="nav-bar">
+
+        <!-- ------nav-bar---------- -->
+        <nav>
+          <ul>
+            <div>
+              <li><a href="index.html">Accueil</a></li>
+            </div>
+            <div>
+              <li><a href="/index/OtherPage/resevation.html">Réservations</a></li>
+            </div>
+            <!-- <div>
+              <li><a href="">Tarifs</a></li>
+            </div> -->
+            <div>
+              <li><a href="/index/OtherPage/nosterrains.html">Nos Terrains</a></li>
+            </div>
+            <div>
+              <li><a href="/index/OtherPage/contact.html">Contact</a></li>
+            </div>
+          </ul>
+        </nav>
+
+        <!-- -------search-icon---------- -->
+        <div class="search-icon">
+          <i class="fa-light fa-magnifying-glass"></i>
+        </div>
+
+      </div>
+      <div>
+        <div class="se-connecter">
+          <button class="btn btn-primary">S'inscrire</button>
+          <button class="btn btn-primary" id="seConnecter_button">Se Connecter</button>
+          <!-- <div class="profile">
+            <img
+              src="Images/profile pic.jpg"
+              alt="imge de profil"
+              class="profile-image"
+            />
+          </div> -->
+        </div>
+      </div>
+    </header>
+
+
+    <!-- <nav>
+      <li><a href="#">Accueil</a></li>
+      <li><a href="#">Réservations</a></li>
+      <li><a href="#">Tarifs</a></li>
+      <li><a href="#">Nos Terrains</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Profil</a></li>
+    </nav> -->
+
+    <section class="hero">
+      <div class="hero-content">
+
+        <div class="title-hero">
+          <h1>Bienvenue Sur <span>FootHall</span> Pour vos <span>Service</span> <br> Sportive</h1>
+          <p>
+            Réservez facilement vos terrains Réservez facilement vos terrains de
+            football en ligne. Ts clics. Que vous soyez un joueur amateur
+          </p>
+
+          <div>
+            <div class="action-buttons">
+              <button type="button" class="btn btn-primary btn-lg">
+                Réserve maintenant !
+              </button>
+              <button type="button" class="btn btn-secondary btn-lg">
+                En savoir plus
+              </button>
+            </div>
+            <div class="media-social-hero">
+              <div>
+                <i class="fa-brands fa-facebook-f"></i>
+              </div>
+              <div>
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+              <div>
+                <i class="fa-brands fa-linkedin-in"></i>
+              </div>
+              <div>
+                <i class="fa-brands fa-tiktok"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="carouselExampleDark" class="carousel carousel-dark slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img
+                src="Images/Stade de football 3d rendant un stade de football avec une arène de terrain bondée _ Photo Premium.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>First slide label</h5>
+                <p>
+                  Some representative placeholder content for the first slide.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="Images/Soccer stadium arena with natural green grass football concept _ Premium AI-generated image.jpg" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Second slide label</h5>
+                <p>
+                  Some representative placeholder content for the second slide.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="Images/Stadium 5120x1440, 3840x1080, 3440x1440 pixels.jpeg" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+                <p>
+                  Some representative ozplaceholder content for the third slide.
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+
+      </div>
+    </section>
+
+    <div class="separateur-hero"> 
+      <h2>Title</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis provident inventore nemo ipsa odit, corporis </p>
+    </div>
+
+    <h2 class="title-sectionsecd">Nos Terrains</h2>
+
+    <section class="terrains">
+      <div class="filters">
+        <h2 class="title-sectionsecd">Nos Terrains</h2>
+        <div>
+          <input
+          type="text"
+          placeholder="Filtrer par localisation..."
+          id="filtreLocalisation"
+        />
+        <button onclick="filtrerTerrains()">Filtrer</button>
+        <button onclick="alert('Réservation directe en cours')">
+          Réservation directe
+        </button>
+        </div>
+      </div>
+      
+      <div class="slider" id="slider">
+        <div class="conponet">
+          <div>
+            <a href=""><img src="Images/Bing Image Creator.jpg" alt="Terrain 1" /></a>
+          </div>
+          <div class="title-terrain">
+            <h5>Nom du terrain</h5>
+            <p>Terrain 2D - étang pour Warmachine & Hordes, Age of Sigmar étang pour Warmachine & Hordes étang pour Warmachine & Hordes</p>
+            <div class="terrain-etoile">
+              <div class="etoile-color"><i class="fa-solid fa-star"></i></div>
+              <div class="etoile-color"><i class="fa-solid fa-star"></i></div>
+              <div class="etoile-color"><i class="fa-solid fa-star"></i></div>
+              <div class="etoile-color-moitier"><i class="fa-solid fa-star"></i></div>
+              <div><i class="fa-solid fa-star"></i></div>
+
+              <div class="more"><i class="fa-solid fa-angle-down"></i></div>
+              <div>15</div>
+            </div>
+            <div class="Voir-resrve-terrain">
+              <button>Voir Et Réservez</button>
+            </div>
+          </div>
+        </div>
+        
+
+        <div class="conponet">
+          <div>
+            <a href=""><img src="Images/Bing Image Creator.jpg" alt="Terrain 1" /></a>
+          </div>
+          <div class="title-terrain">
+            <h5>Nom du terrain</h5>
+            <p>Terrain 2D - étang pour Warmachine & Hordes, Age of Sigmar étang pour Warmachine & Hordes étang pour Warmachine & Hordes</p>
+            <div class="terrain-etoile">
+              <div class="etoile-color"><i class="fa-solid fa-star"></i></div>
+              <div class="etoile-color"><i class="fa-solid fa-star"></i></div>
+              <div class="etoile-color"><i class="fa-solid fa-star"></i></div>
+              <div class="etoile-color-moitier"><i class="fa-solid fa-star"></i></div>
+              <div><i class="fa-solid fa-star"></i></div>
+
+              <div class="more"><i class="fa-solid fa-angle-down"></i></div>
+              <div>15</div>
+            </div>
+            <div class="Voir-resrve-terrain">
+              <button>Voir Et Réservez</button>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="conponet">
+          <div>
+            <a href=""><img src="Images/Bing Image Creator.jpg" alt="Terrain 1" /></a>
+          </div>
+          <div class="title-terrain">
+            <h5>Nom du terrain</h5>
+            <p>Terrain 2D - étang pour Warmachine & Hordes, Age of Sigmar étang pour Warmachine & Hordes étang pour Warmachine & Hordes</p>
+            <div class="terrain-etoile">
+              <div class="etoile-color"><i class="fa-solid fa-star"></i></div>
+              <div class="etoile-color"><i class="fa-solid fa-star"></i></div>
+              <div class="etoile-color"><i class="fa-solid fa-star"></i></div>
+              <div class="etoile-color-moitier"><i class="fa-solid fa-star"></i></div>
+              <div><i class="fa-solid fa-star"></i></div>
+
+              <div class="more"><i class="fa-solid fa-angle-down"></i></div>
+              <div>15</div>
+            </div>
+            <div class="Voir-resrve-terrain">
+              <button>Voir Et Réservez</button>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="conponet">
+          <div>
+            <a href=""><img src="Images/Bing Image Creator.jpg" alt="Terrain 1" /></a>
+          </div>
+          <div class="title-terrain">
+            <h5>Nom du terrain</h5>
+            <p>Terrain 2D - étang pour Warmachine & Hordes, Age of Sigmar étang pour Warmachine & Hordes étang pour Warmachine & Hordes</p>
+            <div class="terrain-etoile">
+              <div class="etoile-color"><i class="fa-solid fa-star"></i></div>
+              <div class="etoile-color"><i class="fa-solid fa-star"></i></div>
+              <div class="etoile-color"><i class="fa-solid fa-star"></i></div>
+              <div class="etoile-color-moitier"><i class="fa-solid fa-star"></i></div>
+              <div><i class="fa-solid fa-star"></i></div>
+
+              <div class="more"><i class="fa-solid fa-angle-down"></i></div>
+              <div>15</div>
+            </div>
+            <div class="Voir-resrve-terrain">
+              <button>Voir Et Réservez</button>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="conponet">
+          <div>
+            <a href=""><img src="Images/Bing Image Creator.jpg" alt="Terrain 1" /></a>
+          </div>
+          <div class="title-terrain">
+            <h5>Nom du terrain</h5>
+            <p>Terrain 2D - étang pour Warmachine & Hordes, Age of Sigmar étang pour Warmachine & Hordes étang pour Warmachine & Hordes</p>
+            <div class="terrain-etoile">
+              <div class="etoile-color"><i class="fa-solid fa-star"></i></div>
+              <div class="etoile-color"><i class="fa-solid fa-star"></i></div>
+              <div class="etoile-color"><i class="fa-solid fa-star"></i></div>
+              <div class="etoile-color-moitier"><i class="fa-solid fa-star"></i></div>
+              <div><i class="fa-solid fa-star"></i></div>
+
+              <div class="more"><i class="fa-solid fa-angle-down"></i></div>
+              <div>15</div>
+            </div>
+            <div class="Voir-resrve-terrain">
+              <button>Voir Et Réservez</button>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="conponet">
+          <div>
+            <a href=""><img src="Images/Bing Image Creator.jpg" alt="Terrain 1" /></a>
+          </div>
+          <div class="title-terrain">
+            <h5>Nom du terrain</h5>
+            <p>Terrain 2D - étang pour Warmachine & Hordes, Age of Sigmar étang pour Warmachine & Hordes étang pour Warmachine & Hordes</p>
+            <div class="terrain-etoile">
+              <div class="etoile-color"><i class="fa-solid fa-star"></i></div>
+              <div class="etoile-color"><i class="fa-solid fa-star"></i></div>
+              <div class="etoile-color"><i class="fa-solid fa-star"></i></div>
+              <div class="etoile-color-moitier"><i class="fa-solid fa-star"></i></div>
+              <div><i class="fa-solid fa-star"></i></div>
+
+              <div class="more"><i class="fa-solid fa-angle-down"></i></div>
+              <div>15</div>
+            </div>
+            <div class="Voir-resrve-terrain">
+              <button>Voir Et Réservez</button>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="Voir-plus">
+          <button onclick="alert('Chargement des autres terrains...')">Voir plus</button>
+        </div>
+
+
+
+      </div>
+    </section>
+
+    <footer>&copy; 2025 Réservation FootHall - Tous droits réservés</footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

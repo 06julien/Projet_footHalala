@@ -1,0 +1,448 @@
+/* ...existing code... */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f6f8fb;           /* Fond principal */
+  color: #23272a;                /* Texte principal */
+  line-height: 1.6;
+}
+
+header {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f5f5f5;           /* Header/fond sombre */
+  gap: 12rem;
+  color: #fff;
+  width: 100%;
+  height: 5rem;
+  padding: 15px;
+  box-shadow: 0 2px 8px rgba(25, 23, 23, 0.447); /* Ombre */
+  backdrop-filter: blur(5px);
+  z-index: 1000;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 30rem;
+  height: auto;
+}
+
+.nav-bar nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  /* width: 30rem; */
+  height: auto;
+}
+
+.nav-bar nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.7rem;
+  width: 60rem;
+  list-style-type: none;
+  padding: 0; 
+  margin: 0; 
+}
+
+.nav-bar nav ul li a{
+  font-weight: 600;
+  font-size: 18px;
+  text-decoration: none;
+  color: #01496a;
+}
+
+
+
+.navbar-nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.navbar-nav a:hover,
+.navbar-nav a:focus {
+  color: #00bfae;                /* Primaire turquoise */
+}
+
+.btn{
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #01496a;
+  border: 1px solid #01496a;
+}
+
+#seConnecter_button {
+  color: #01496a;
+  background-color: #f6f8fb00;
+  border: 1px solid #01496a;
+}
+
+
+
+.logo {
+  font-weight: bold;
+  font-size: 1.5em;
+  letter-spacing: 1px;
+  color: #00bfae;    
+}
+
+.se-connecter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(44, 62, 80, 0.10); /* Ombre */
+}
+
+.profile img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: url("/index/Images/Simple-white-background-with-smooth-lines-in-light-colors-_-Premium-Photo.jpg") no-repeat center/cover; */
+  color: #000000;
+  height: 45rem;
+  padding: 100px 20px 80px 20px;
+  text-align: center;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 4px 16px rgba(44, 62, 80, 0.10); /* Ombre */
+  /* background: radial-gradient(circle at 30% 30%, #00bfaf48, transparent 70%); */
+  animation: move 8s linear infinite alternate;
+  color: #ffffff;
+  background-image: 
+    radial-gradient(circle at top left, #00bfae, #dfdfdf 40%),
+    radial-gradient(circle at bottom right, #00bfae, #dfdfdf 40%)
+}
+
+
+.hero-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  gap: 4rem;
+  width: 100rem;
+}
+
+.title-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  gap: 10px;
+  width: 35%;
+  height: 50%;
+}
+
+.action-buttons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.title-hero h1 span {
+  color: #01496a;
+}
+
+.title-hero button {
+  margin-top: 2rem;
+}
+
+.hero h1 {
+  font-size: 2.8em;
+  font-weight: 600;
+  margin-bottom: 18px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+
+.media-social-hero {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 30px;
+}
+
+.media-social-hero div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  font-size: 23px;
+  border: 2px solid rgba(0, 0, 0, 0.288);
+  border-radius: 10px;
+}
+
+
+
+
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 38rem;
+  height: 32rem;
+  color: #fff !important;
+}
+
+.carousel .carousel-item img {
+  width: 627 !important;
+  height: 417px;
+  border-radius: 8px;
+}
+
+.carousel-indicators button{
+  background-color: #262525 !important;
+}
+.carousel-caption p {
+  color: #fff !important;
+}
+.carousel-caption h5 {
+  color: #fff !important;
+}
+.carousel-control-prev-icon{
+  filter: invert(1);
+}
+.visually-hidden {
+  filter: invert(1);
+}
+
+
+
+
+
+
+
+/*
+.carousel-inner {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  gap: 1.5rem;
+  margin-top: 3.5rem;
+} */
+
+.terrains {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 48px 20px;
+  width: 100%;
+  margin: 0 auto;
+}
+.terrains h2 {
+  margin-bottom: 28px;
+  font-size: 2em;
+  color: #00bfae;                /* Primaire turquoise */
+}
+.title-sectionsecd {
+  bottom: 0;
+  color: #00bfae;
+  margin-top: 2rem;
+  font-weight: 600;
+  font-size: 40px;
+  margin-left: 8.7rem;
+}
+
+
+
+.separateur-hero {
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 25px;
+  background-color: #00bfae;
+  padding: 30px;
+  width: 100%;
+  height: 15rem;
+}
+
+.slider {
+  display: grid;
+  grid-template-columns: 420px 420px 420px;
+  gap: 1rem;
+  /* overflow-x: auto; */
+  /* scroll-behavior: smooth; */
+  margin-left: 6.8rem;
+  margin-bottom: 35rem;
+  width: 80rem;
+  height: 50rem;
+  
+}
+.slider .conponet{
+  width: 400px;
+  height: 600px;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  background-color: #e8eaed70;
+  border: 1px solid #00000021;
+  box-shadow: 0 2px 12px rgba(124, 58, 237, 0.10); /* Ombre violette */
+  transition: transform 0.2s, box-shadow 0.2s, border 0.2s;
+}
+
+.slider .conponet img {
+  border-radius: 6px 10px 0px 0px;
+  width: 400px;
+  height: 300px;
+}
+
+
+
+.slider .conponet:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 24px rgba(124, 58, 237, 0.18); /* Accent violet */
+  border: 1px solid #00bfae;                       /* Accent violet */
+}
+
+.title-terrain {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.title-terrain h5 {
+  color: #00bfae;
+  font-size: 25px;
+  font-weight: 700;
+}
+.terrain-etoile {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  font-size: 20px;
+}
+
+.etoile-color i {
+  color: #00bfae;
+}
+.etoile-color-moitier i {
+  background: linear-gradient(90deg, #00bfae 50%, #000000 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Voir-resrve-terrain button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  color: white;
+  width: 10rem;
+  height: 2rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #00bfae;
+}
+.Voir-resrve-terrain button:hover {
+  background-color: #01496a;
+}
+
+
+
+
+.filters {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-left: 7.5rem;
+  /* justify-content: center; */
+  align-items: center;
+}
+.filters input,
+.filters button {
+  padding: 10px 14px;
+  border-radius: 6px;
+  border: 1px solid #d1d8e0;
+  font-size: 1em;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.filters input:focus {
+  border-color: #101010;         /* Primaire turquoise */
+  box-shadow: 0 0 0 2px #00bfae33;
+}
+.filters button {
+  background: #00bfae;           /* Accent violet */
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+.filters button:hover,
+.filters button:focus {
+  background: #01496a;           /* Primaire turquoise */
+}
+
+.Voir-plus {
+  width: 100%;
+  margin-left: 36.5rem;
+}
+.Voir-plus button {
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  background-color: #00bfae;
+  margin-bottom: 5rem;
+  width: 8rem;
+  height: 3rem;
+}
+
+footer {
+  background: #23272a;           /* Header/fond sombre */
+  color: #fff;
+  padding: 16px 20px;
+  text-align: center;
+  margin-top: 48px;
+  border-radius: 16px 16px 0 0;
+  font-size: 1em;
+  letter-spacing: 0.5px;
+}
+
