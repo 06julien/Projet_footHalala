@@ -278,8 +278,8 @@ header {
   color: #00bfae;
   margin-top: 2rem;
   font-weight: 600;
-  font-size: 40px;
-  margin-left: 8.7rem;
+  font-size: 50px;
+  /* margin-left: 8.7rem; */
 }
 
 
@@ -357,6 +357,10 @@ header {
   font-size: 20px;
 }
 
+.etoile-resolt {
+  font-size: 16px;
+  color: #da9500;
+}
 .etoile-color i {
   color: #00bfae;
 }
@@ -386,7 +390,7 @@ header {
 
 
 .filters {
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   gap: 14px;
   margin-left: 7.5rem;
