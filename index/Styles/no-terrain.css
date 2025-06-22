@@ -20,7 +20,6 @@
     }
     .terrain-card {
       width: 40rem;
-      height: 40rem;
       border-radius: 1rem;
       overflow: hidden;
       background: #fff;
@@ -36,21 +35,25 @@
       object-fit: cover;
       width: 100%;
     }
+    .card-body {
+      height: 350px;
+    }
     .terrain-card .card-body {
       padding: 1rem 1.25rem;
     }
+    
     .card-body p {
       width: 600px;
       height: 77px;
     }
     .terrain-title {
-      font-size: 1.25rem;
+      font-size: 2rem;
       font-weight: 600;
       margin-bottom: .5rem;
     }
     .terrain-price {
       color: #0ea5e9;
-      font-size: 1.1rem;
+      font-size: 1.6rem;
       font-weight: bold;
     }
     .button-resever {
@@ -92,7 +95,7 @@
     }
     .col-md-4 {
       width: 50rem;
-      height: 50rem;
+      height: 60rem;
     }
 
 
