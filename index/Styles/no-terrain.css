@@ -39,6 +39,10 @@
     .terrain-card .card-body {
       padding: 1rem 1.25rem;
     }
+    .card-body p {
+      width: 600px;
+      height: 77px;
+    }
     .terrain-title {
       font-size: 1.25rem;
       font-weight: 600;
@@ -51,7 +55,7 @@
     }
     .button-resever {
       margin-top: 1rem;
-      width: 10rem !important;
+      width: auto !important;
       height: 3rem;
       background-color: #0ea5e9;
       border: none;
@@ -94,12 +98,18 @@
 
     .video-terrain {
       width: 100%;
-      height: 25rem;
+      height: 21rem;
 
     }
     .video-terrain video {
       width: 100%;
-      height: 25rem;
+      height: 20rem;
 
     }
    
+    .btn-outline-secondary {
+      color: #fff;
+    }
+    .btn-outline-secondary:hover {
+      background-color: #0f766e;
+    }
