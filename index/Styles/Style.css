@@ -59,10 +59,14 @@ header {
 }
 
 .nav-bar nav ul li a{
-  font-weight: 600;
+  font-weight: 700;
   font-size: 18px;
   text-decoration: none;
   color: #01496a;
+}
+
+.nav-bar nav ul li a:hover {
+  border-bottom: 3px solid #00bfae;
 }
 
 
@@ -139,8 +143,8 @@ header {
   animation: move 8s linear infinite alternate;
   color: #ffffff;
   background-image: 
-    radial-gradient(circle at top left, #00bfae, #dfdfdf 40%),
-    radial-gradient(circle at bottom right, #00bfae, #dfdfdf 40%)
+    radial-gradient(circle at top left, #00bfae, #ffffffbf 60%),
+    radial-gradient(circle at bottom right, #00bfae, #ffffff 40%)
 }
 
 

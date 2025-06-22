@@ -6,7 +6,7 @@
     }
 
     main {
-      background: linear-gradient(15deg, #ffffff5f, #009e91bc);
+      background: linear-gradient(15deg, #ffffff5f, #c2fbf6bc);
       color: #01496a;
       display: flex;
       justify-content: center;
@@ -40,7 +40,7 @@
     }
 
     .form-group label {
-        font-weight: 500;
+      font-weight: 500;
       display: block;
       margin-bottom: 0.3rem;
       font-weight: 600;
