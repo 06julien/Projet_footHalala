@@ -1,0 +1,49 @@
+main {
+      background: 
+        radial-gradient(circle at top left, #00bfae, #ffffffbf 60%),
+        radial-gradient(circle at bottom right, #00bfae, #d7cece 40%);
+      color: #203a43;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .form-container {
+      background: rgba(205, 195, 195, 0.4);
+      color: #203a43;
+      border-radius: 12px;
+      padding: 2rem;
+      width: 100%;
+      max-width: 400px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+    }
+    .form-control, .form-control:focus {
+      background-color: rgba(255, 255, 255, 0.502);
+      color: #000000;
+      border-color: rgba(255,255,255,0.2);
+    }
+    .form-control::placeholder {
+      color: #aaaaaa4c;
+    }
+    .input-group-text {
+      background-color: transparent;
+      border: none;
+      color: #203a43;
+    }
+    .btn-custom {
+      background-color: #00e6c3;
+      color: #ffffff;
+      font-weight: bold;
+      border-radius: 8px;
+    }
+    .btn-custom:hover {
+      background-color: #00bfa6;
+    }
+    .toggle-password {
+      cursor: pointer;
+      color: #50c878;
+    }
+
+    .toggle-password {
+        color: #203a43;
+    }

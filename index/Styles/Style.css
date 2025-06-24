@@ -19,7 +19,7 @@ header {
   justify-content: center;
   align-items: center;
   background: #f5f5f5;           /* Header/fond sombre */
-  gap: 12rem;
+  gap: 13.3rem;
   color: #fff;
   width: 100%;
   height: 5rem;
@@ -92,6 +92,10 @@ header {
   color: #01496a;
   background-color: #f6f8fb00;
   border: 1px solid #01496a;
+}
+#seConnecter_button:hover {
+  color: #fff;
+  background-color: #00bfae;
 }
 
 
@@ -282,10 +286,10 @@ header {
 }
 .title-sectionsecd {
   bottom: 0;
-  color: #00bfae;
+  color: #01496a !important;
   margin-top: 2rem;
-  font-weight: 600;
-  font-size: 50px;
+  font-weight: 700;
+  font-size: 60px;
   /* margin-left: 8.7rem; */
 }
 
@@ -338,7 +342,6 @@ header {
 }
 
 
-
 .slider .conponet:hover {
   transform: scale(1.02);
   box-shadow: 0 4px 24px rgba(124, 58, 237, 0.18); /* Accent violet */
@@ -350,11 +353,15 @@ header {
   flex-direction: column;
   padding: 20px;
 }
+
+
 .title-terrain h5 {
-  color: #00bfae;
+  color: #01496a;
   font-size: 25px;
   font-weight: 700;
 }
+
+
 .terrain-etoile {
   display: flex;
   justify-content: left;
@@ -444,6 +451,9 @@ header {
   margin-bottom: 5rem;
   width: 8rem;
   height: 3rem;
+}
+.Voir-plus button:hover {
+  background-color: #01496a;
 }
 
 footer {
