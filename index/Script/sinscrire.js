@@ -11,3 +11,4 @@
       icon.classList.add('fa-eye');
     }
   }
+  togglePassword();

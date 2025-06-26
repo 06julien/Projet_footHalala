@@ -1,8 +1,8 @@
 main {
       background: 
         radial-gradient(circle at top left, #00bfae, #ffffffbf 60%),
-        radial-gradient(circle at bottom right, #00bfae, #d7cece 40%);
-      color: #203a43;
+        radial-gradient(circle at bottom right, #00bfae, #d7cece02 40%);
+      color: #01496a;
       min-height: 100vh;
       display: flex;
       justify-content: center;
@@ -18,12 +18,13 @@ main {
       box-shadow: 0 8px 30px rgba(0,0,0,0.4);
     }
     .form-control, .form-control:focus {
-      background-color: rgba(255, 255, 255, 0.502);
+      background-color: rgba(255, 255, 255, 0.087);
       color: #000000;
-      border-color: rgba(255,255,255,0.2);
+      border-color: #01496a8f;
+      border-radius: 4px !important;
     }
     .form-control::placeholder {
-      color: #aaaaaa4c;
+      color: #0000004c;
     }
     .input-group-text {
       background-color: transparent;
@@ -31,12 +32,18 @@ main {
       color: #203a43;
     }
     .btn-custom {
+        display: flex;
+        justify-content: center;
+        align-items: center;
       background-color: #00e6c3;
       color: #ffffff;
       font-weight: bold;
-      border-radius: 8px;
+      border-radius: 4px;
+      width: 16rem !important;
+      margin-left: 2.3rem;
     }
     .btn-custom:hover {
+        color: #fff;
       background-color: #00bfa6;
     }
     .toggle-password {
