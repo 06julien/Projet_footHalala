@@ -52,8 +52,8 @@
       </div>
       <div>
         <div class="se-connecter">
-          <button class="btn btn-primary">S'inscrire</button>
-          <button class="btn btn-primary" id="seConnecter_button">Se Connecter</button>
+          <a href="./seconnecter.html"><button class="btn btn-primary" id="seConnecter_button">Se Connecter</button></a>
+          <a href="./sinscrire.html"><button class="btn btn-primary">S'inscrire</button></a>
           <!-- <div class="profile">
             <img
               src="Images/profile pic.jpg"
@@ -69,23 +69,23 @@
     <main>
         
     <div class="form-container">
-    <h2 class="text-center fw-bold mb-2" style="color:#00e6c3;">FOOTHALL</h2>
+    <h2 class="text-center fw-bold mb-2">FootHall</h2>
     <p class="text-center mb-4">Créez votre compte</p>
 
     <form>
-        <div class="row g-2 mb-3">
-        <div class="col-6">
-            <div class="input-group">
-            <span class="input-group-text"><i class="fas fa-user"></i></span>
-            <input type="text" class="form-control" placeholder="Prénom" required>
-            </div>
-        </div>
-        <div class="col-6">
-            <div class="input-group">
-            <span class="input-group-text"><i class="fas fa-user"></i></span>
-            <input type="text" class="form-control" placeholder="Nom" required>
-            </div>
-        </div>
+        <div class="row g-2 mb-3 name-prenom">
+          <div class="col-6 content-name">
+              <div class="input-group">
+              <span class="input-group-text"><i class="fas fa-user"></i></span>
+              <input type="text" class="form-control" placeholder="Prénom" required>
+              </div>
+          </div>
+          <div class="col-6 content-name">
+              <div class="input-group">
+              <span class="input-group-text"><i class="fas fa-user"></i></span>
+              <input type="text" class="form-control" placeholder="Nom" required>
+              </div>
+          </div>
         </div>
 
         <div class="input-group mb-3">
@@ -95,12 +95,12 @@
 
         <div class="input-group mb-3">
         <span class="input-group-text"><i class="fas fa-phone"></i></span>
-        <input type="tel" class="form-control" placeholder="Téléphone" required>
+        <input type="number" class="form-control" placeholder="Téléphone" required>
         </div>
 
-        <div class="input-group mb-3">
+        <div class="input-group mb-3 password-input">
         <span class="input-group-text"><i class="fas fa-lock"></i></span>
-        <input type="password" class="form-control" id="password" placeholder="Mot de passe" required>
+        <input type="password" class="form-control" id="password" placeholder="Mot de passe" required   >
         <span class="input-group-text toggle-password" onclick="togglePassword('password', this)"><i class="fas fa-eye"></i></span>
         </div>
 
@@ -110,7 +110,9 @@
         <span class="input-group-text toggle-password" onclick="togglePassword('confirmPassword', this)"><i class="fas fa-eye"></i></span>
         </div>
 
-        <button type="submit" class="btn btn-custom w-100 mb-3">S'inscrire</button>
+        <div>
+          <button type="submit" class="btn btn-custom w-100 mb-3">S'inscrire</button>
+        </div>
 
         <div class="text-center">
         <small>Déjà un compte ? <a href="#" class="text-info text-decoration-none">Se connecter</a></small>

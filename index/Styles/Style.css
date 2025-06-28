@@ -146,9 +146,7 @@ header {
   /* background: radial-gradient(circle at 30% 30%, #00bfaf48, transparent 70%); */
   animation: move 8s linear infinite alternate;
   color: #ffffff;
-  background-image: 
-    radial-gradient(circle at top left, #00bfae, #ffffffbf 60%),
-    radial-gradient(circle at bottom right, #00bfae, #ffffff 40%)
+  background-image: radial-gradient(circle at 30% 30%, #00bfaf, transparent 70%);
 }
 
 
@@ -190,6 +188,22 @@ header {
   font-weight: 600;
   margin-bottom: 18px;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  animation: heroTitleFadeIn 2s ease-in-out;
+}
+
+@keyframes heroTitleFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-40px) scale(0.95);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(10px) scale(1.03);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }
 
 
@@ -233,6 +247,7 @@ header {
   border-radius: 8px;
 }
 
+
 .carousel-indicators button{
   background-color: #262525 !important;
 }
@@ -243,6 +258,7 @@ header {
   color: #fff !important;
 }
 .carousel-control-prev-icon{
+  color: #fff !important;
   filter: invert(1);
 }
 .visually-hidden {
@@ -465,5 +481,24 @@ footer {
   border-radius: 16px 16px 0 0;
   font-size: 1em;
   letter-spacing: 0.5px;
+}
+
+.hero p {
+  /* Animation de saisie type machine à écrire */
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid #00bfae;
+  width: 0;
+  animation: typingEffect 3s steps(40, end) 0.5s forwards, blinkCaret 0.7s step-end infinite;
+}
+
+@keyframes typingEffect {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blinkCaret {
+  0%, 100% { border-color: transparent; }
+  100% { border-color: #00bfae; }
 }
 

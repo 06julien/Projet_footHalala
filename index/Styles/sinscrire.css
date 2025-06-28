@@ -1,7 +1,5 @@
 main {
-      background: 
-        radial-gradient(circle at top left, #00bfae, #ffffffbf 60%),
-        radial-gradient(circle at bottom right, #00bfae, #d7cece02 40%);
+      background: linear-gradient(15deg, #ffffff5f, #c2fbf6bc);
       color: #01496a;
       min-height: 100vh;
       display: flex;
@@ -9,10 +7,16 @@ main {
       align-items: center;
     }
     .form-container {
-      background: rgba(205, 195, 195, 0.4);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(15deg, #ffffff5f, #c2fbf6bc);
       color: #203a43;
-      border-radius: 12px;
-      padding: 2rem;
+      border: 1px solid #030f2367;
+      border-radius: 20px;
+      padding: 1rem;
+      margin-top: 5rem;
       width: 100%;
       max-width: 400px;
       box-shadow: 0 8px 30px rgba(0,0,0,0.4);
@@ -20,8 +24,8 @@ main {
     .form-control, .form-control:focus {
       background-color: rgba(255, 255, 255, 0.087);
       color: #000000;
-      border-color: #01496a8f;
-      border-radius: 4px !important;
+      border-color: #111827 ;
+      border-radius: 7px !important;
     }
     .form-control::placeholder {
       color: #0000004c;
@@ -39,18 +43,33 @@ main {
       color: #ffffff;
       font-weight: bold;
       border-radius: 4px;
-      width: 16rem !important;
-      margin-left: 2.3rem;
+      width: 10rem !important;
+      margin-left: 4rem;
     }
     .btn-custom:hover {
         color: #fff;
       background-color: #00bfa6;
     }
     .toggle-password {
+      z-index: 100;
       cursor: pointer;
-      color: #50c878;
+      color: #203a43;
     }
 
-    .toggle-password {
-        color: #203a43;
+    .name-prenom {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
     }
+    .content-name {
+      width: 100%;
+    }
+
+    .password-input {
+      width: 100%;
+      z-index: 2;
+    }
+
+    /* .btn{
+      border-radius: 10px;      
+    } */

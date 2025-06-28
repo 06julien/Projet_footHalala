@@ -19,4 +19,18 @@ document.addEventListener("DOMContentLoaded", function () {
   showItem(current);
 });
 
+// Carrousel automatique Bootstrap
+// Vérifie que Bootstrap est chargé et que l'élément existe
+window.addEventListener('DOMContentLoaded', function () {
+  var carousel = document.querySelector('#carouselExampleDark');
+  if (carousel && window.bootstrap && bootstrap.Carousel) {
+    new bootstrap.Carousel(carousel, {
+      interval: 9000,
+      ride: 'carousel',
+      pause: false,
+      wrap: true
+    });
+  }
+});
+
 // ...existing code...
