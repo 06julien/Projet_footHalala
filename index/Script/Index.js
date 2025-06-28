@@ -33,4 +33,22 @@ window.addEventListener('DOMContentLoaded', function () {
   }
 });
 
-// ...existing code...
+// Fonction pour afficher/masquer l'image média social euro au survol du monstre réseau
+function toggleMediaSocialHero() {
+  const monstreReseau = document.querySelector('.mouse-resaeux'); // l'icône ou image à survoler
+  const mediaSocialEuro = document.querySelector('.media-social-euro'); // l'image à afficher/masquer
+
+  if (!monstreReseau || !mediaSocialEuro) return;
+
+  monstreReseau.addEventListener('mouseenter', function () {
+    mediaSocialEuro.style.display = 'flex';
+    monstreReseau.style.display = 'none';
+  });
+
+  mediaSocialEuro.addEventListener('mouseleave', function () {
+    mediaSocialEuro.style.display = 'none';
+    monstreReseau.style.display = 'flex';
+  });
+}
+
+window.addEventListener('DOMContentLoaded', toggleMediaSocialHero);

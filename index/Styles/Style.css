@@ -502,3 +502,36 @@ footer {
   100% { border-color: #00bfae; }
 }
 
+.mouse-resaeux {
+  display: none;
+  z-index: ;
+
+}
+.mouse-resaeux.visible{
+  display: flex;
+}
+
+.media-social-euro img{
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: MediaMouseReseaux 2s ease-in-out;
+  box-shadow: 1px -1px 20px #000000d3;
+}
+@keyframes MediaMouseReseaux {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px) scale(0.95);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(10px) scale(1.03);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
