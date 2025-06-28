@@ -397,7 +397,9 @@ header {
 .etoile-color-moitier i {
   background: linear-gradient(90deg, #00bfae 50%, #000000 50%);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 
 .Voir-resrve-terrain button{
@@ -502,16 +504,13 @@ footer {
   100% { border-color: #00bfae; }
 }
 
-.mouse-resaeux {
+.media-social-euro, .mediaSocialInsta, .mediaSocialLINK, .mediaSocialTiktok {
   display: none;
-  z-index: ;
-
-}
-.mouse-resaeux.visible{
-  display: flex;
 }
 
-.media-social-euro img{
+.media-social-euro img {
+
+  background-color: #fff;
   width: 50px;
   height: 50px;
   border-radius: 10px;
@@ -521,6 +520,21 @@ footer {
   animation: MediaMouseReseaux 2s ease-in-out;
   box-shadow: 1px -1px 20px #000000d3;
 }
+
+.mediaSocialInsta img,
+.mediaSocialLINK img, 
+.mediaSocialTiktok img {
+  background-color: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: MediaMouseReseaux 2s ease-in-out;
+  box-shadow: 1px -1px 20px #000000d3;
+}
+
 @keyframes MediaMouseReseaux {
   0% {
     opacity: 0;

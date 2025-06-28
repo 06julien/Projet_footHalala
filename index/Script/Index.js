@@ -33,21 +33,28 @@ window.addEventListener('DOMContentLoaded', function () {
   }
 });
 
-// Fonction pour afficher/masquer l'image média social euro au survol du monstre réseau
+// Fonction générique pour afficher/masquer les images médias sociaux au survol de chaque icône
 function toggleMediaSocialHero() {
-  const monstreReseau = document.querySelector('.mouse-resaeux'); // l'icône ou image à survoler
-  const mediaSocialEuro = document.querySelector('.media-social-euro'); // l'image à afficher/masquer
+  const pairs = [
+    ['.mouse-resaeux', '.media-social-euro'],
+    ['.monstreReseauInsta', '.mediaSocialInsta'],
+    ['.monstreReseauLink', '.mediaSocialLINK'],
+    ['.monstreReseauTiktok', '.mediaSocialTiktok']
+  ];
 
-  if (!monstreReseau || !mediaSocialEuro) return;
-
-  monstreReseau.addEventListener('mouseenter', function () {
-    mediaSocialEuro.style.display = 'flex';
-    monstreReseau.style.display = 'none';
-  });
-
-  mediaSocialEuro.addEventListener('mouseleave', function () {
-    mediaSocialEuro.style.display = 'none';
-    monstreReseau.style.display = 'flex';
+  pairs.forEach(([iconClass, mediaClass]) => {
+    const icon = document.querySelector(iconClass);
+    const media = document.querySelector(mediaClass);
+    if (icon && media) {
+      icon.addEventListener('mouseenter', function () {
+        icon.style.display = 'none';
+        media.style.display = 'flex';
+      });
+      media.addEventListener('mouseleave', function () {
+        media.style.display = 'none';
+        icon.style.display = 'flex';
+      });
+    }
   });
 }
 
